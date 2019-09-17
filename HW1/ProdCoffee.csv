@@ -1,0 +1,14 @@
+ProductId,Product,Product Line,Product Type,Type
+1,Amaretto,Beans,Coffee,Regular
+2,Colombian,Beans,Coffee,Regular
+3,Decaf Irish Cream,Beans,Coffee,Decaf
+4,Caffe Latte,Beans,Espresso,Regular
+5,Caffe Mocha,Beans,Espresso,Regular
+6,Decaf Espresso,Beans,Espresso,Decaf
+7,Regular Espresso,Beans,Espresso,Regular
+8,Chamomile,Leaves,Herbal Tea,Decaf
+9,Lemon,Leaves,Herbal Tea,Decaf
+10,Mint,Leaves,Herbal Tea,Decaf
+11,Darjeeling,Leaves,Tea,Regular
+12,Earl Grey,Leaves,Tea,Regular
+13,Green Tea,Leaves,Tea,Regular

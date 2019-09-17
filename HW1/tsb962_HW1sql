@@ -1,0 +1,35 @@
+-- 1. Write a query to select all columns from the FactCoffee table
+Select *
+From FACTCOFFEE;
+
+-- 2. Write a query to select the following three columns from the FactCoffee table:
+-- • Column which specifies the year, month, date of the sale
+-- • Column which specifies the budgeted sales
+-- • Column which specifies the actual Sales 
+Select FACTDATE, BUDGETSALES, SALES
+From factcoffee;
+
+-- 3. Write a query to find out what were the total sales, across all products and all area codes, for
+-- any particular month in the year 2012 and 2013.
+select sum(sales), to_char(factdate, 'MM-YYYY'), areacode, productid
+from factcoffee
+where factdate between '01-JAN-12' and '01-JAN-2014' 
+group by to_char(factdate, 'MM-YYYY'), productid, areacode
+order by to_char(factdate, 'MM-YYYY');
+
+-- Write a query to find out what were the total sales, across all products and all area codes, for
+-- the month of May (5) in the year 2012.
+select sum(sales), to_char(factdate, 'MM-YYYY'), areacode, productid
+from factcoffee
+where factdate between '01-MAY-12' and '31-MAY-12'
+group by to_char(factdate, 'MM-YYYY'), productid, areacode
+order by to_char(factdate, 'MM-YYYY');
+
+-- 5. Find the products with profit margins as percentage of sales (profits/sales) of at least 15%.
+-- Display the results in descending order of total actual sales. Round the percentage to two digits
+-- using ROUND(….,2) function.
+Select prodcoffee.product, round(sum(fc.profit)/sum(fc.sales), 2) as margin, sum(fc.sales)
+from factcoffee fc left join prodcoffee on fc.productid = prodcoffee.productid
+group by prodcoffee.product
+having round(sum(fc.profit)/sum(fc.sales), 2) >= .15
+order by sum(fc.sales) desc;
