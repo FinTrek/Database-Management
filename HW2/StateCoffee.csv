@@ -1,0 +1,21 @@
+StateID,State,Market,Market Size
+1001,California,West,Major Market
+1002,Colorado,Central,Major Market
+1003,Connecticut,East,Small Market
+1004,Florida,East,Major Market
+1005,Illinois,Central,Major Market
+1006,Iowa,Central,Small Market
+1007,Louisiana,South,Small Market
+1008,Massachusetts,East,Major Market
+1009,Missouri,Central,Small Market
+1010,Nevada,West,Small Market
+1011,New Hampshire,East,Small Market
+1012,New Mexico,South,Small Market
+1013,New York,East,Major Market
+1014,Ohio,Central,Major Market
+1015,Oklahoma,South,Small Market
+1016,Oregon,West,Small Market
+1017,Texas,South,Major Market
+1018,Utah,West,Small Market
+1019,Washington,West,Small Market
+1020,Wisconsin,Central,Small Market
