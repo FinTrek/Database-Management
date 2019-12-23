@@ -7,3 +7,8 @@
 - HW4 uses Hadoop through MRjob library in python to find the top ten most common salaries within three files using mapreduce.
 
 - Spark Guide is a tutorial on Apache Spark using Databricks 
+
+- Project folder is a Traffic Fatalities EDA Group Project
+  • Utilized Databricks and Spark to analyze US traffic fatalities dataset to research what were the main causes of death
+  • Created informative graphs using Databricks SQL API that showed that drunk drivers and rain were the most significant factors in car crash fatalities
+
